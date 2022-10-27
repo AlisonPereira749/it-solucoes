@@ -29,6 +29,10 @@ body {
     align-items: center;
 }
 
+#logo {
+    width: 50px;
+}
+
 #navbar_items {
     display: flex;
     list-style: none;
