@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+#navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #111;
+    color: #eee;
+    position: fixed;
+}
+
+#navbar_container {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar_items {
+    display: flex;
+    list-style: none;
+}
+
+#navbar_items li {
+    margin-right: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+#navbar_items li:hover {
+    transition: all 300ms ease;
+    background-color: rgb(39, 38, 38);
+    border-radius: 5px;
+}
+
+#navbar_items li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* SHOWCASE */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background-image: url(../img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color;
+}
+
+.showcase_container {
+    text-align: center;
+}
+
+.showcase_container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.showcase_container p {
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.showcase_container .btn {
+    display: inline-block;
+    background-color: rgb(39, 38, 38);
+    padding: 15px 60px;
+    border-radius: 8px;
+    color: #eee;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.showcase_container .btn:hover {
+    transition: all 300ms ease-in-out;
+    background-color: #111;
+    border-radius: 5px;
+}
+
+/* CLIENTS */
+#clients {
+    width: 100%;
+    color: #111;
+    padding: 50px;
+}
+
+.headline {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.clients_container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-items: center;
+    padding: 15px;
+}
+
+.client {
+    display: inline-block;
+    width: 25%;
+}
+
+/* FEATURES */
+.features {
+    width: 100%;
+    background-color: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+.features_container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.feature i {
+    display: block; 
+}
+
+.feature .feature-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.feature p {
+    color: #eeeeeec5;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* NOSSOS PRODUTOS */
+.product {
+    width: 100%;
+    padding: 50px;
+}
+
+.product_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_container .items {
+    max-width: 500px;
+}
+
+.product_container .item {
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* testimonials */
+.testimonials {
+    width: 100%;
+    background-color: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+.testimonials_container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 18px;
+}
+
+.testimonial img {
+    height: 180px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.testimonial p {
+    max-width: 450px;
+}
+
+/* gallery */
+#gallery {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+.gallery_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.gallery_container img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+/* footer */
+.footer {
+    font-size: 12px;
+    background-color: #222;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+}

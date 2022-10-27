@@ -1,0 +1,87 @@
+/* MENU */
+#navbar {
+    height: 180px;
+    position: static;
+}
+
+#navbar_container {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+#navbar_items {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+#navbar_items li:nth-child(2) {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+/* Showcase */
+
+.showcase_container h2 {
+    font-size: 1.6rem;
+}
+
+.showcase_container p {
+    max-width: 80%;
+    margin: 15px auto;
+}
+
+/* Clients */
+.clients_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.client {
+    width: 60%;
+    padding: 15px;
+}
+
+/* Features */
+.features_container {
+    grid-template-columns: 1fr;
+}
+
+.features_container .feature:nth-child(2) {
+    margin: 15px 0;
+}
+
+/* product */
+.product_container {
+    flex-direction: column;
+}
+
+.product_container img {
+    height: 100%;
+    width: 100%;
+    max-width: 60%;
+}
+
+/* testimonials */
+.testimonials_container {
+    width: 80%;
+}
+
+.testimonial {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.testimonial img {
+    height: 100px;
+}
+
+.testimonial p {
+    line-height: 22px;
+}
+
+/* gallery */
+.gallery_container {
+    grid-template-columns: 1fr;
+}
